@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: one-line-execution
-        run: echo sleep 10
+        run: sleep 10
