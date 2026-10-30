@@ -1,13 +1,10 @@
-name: hello-world
+name: sleep
 
 on: push
 
 jobs:
-  hello-world-job:
-  
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: check out repository code
-        uses: actions/checkout@v4
-      - run: echo "$(cat hello_world.txt)"
+      - name: one-line-execution
+        run: echo sleep 10
