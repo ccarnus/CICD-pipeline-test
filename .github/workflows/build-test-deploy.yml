@@ -1,4 +1,4 @@
-name: buil-test-deploy
+name: build-test-deploy
 
 on: push
 
@@ -11,7 +11,7 @@ jobs:
       - name: use node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24.x'
+          node-version: 22
       - run: npm install
       - run: npm run build
 
@@ -24,7 +24,7 @@ jobs:
       - name: use node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24.x'
+          node-version: 22
       - run: npm install
       - run: npm test
   
