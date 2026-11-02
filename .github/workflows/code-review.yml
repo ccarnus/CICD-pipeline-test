@@ -17,5 +17,4 @@ jobs:
       - run: gh --version
       - run: gh auth status
       - run: gh workflow list
-      - run: gh issue list
-      - run: gh repo list
+      - run: env
