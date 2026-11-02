@@ -10,8 +10,8 @@ jobs:
 
     steps:
       - name: DISPLAY BEFORE
-        run: pwd && ll
+        run: pwd && ls -al
       - name: RUN THE CHECKOUT
         uses: actions/checkout@v4
       - name: DISPLAY AFTER
-        run: pwd && ll
+        run: pwd && ls -al
