@@ -1,0 +1,15 @@
+name: code-review
+
+on:
+  push:
+    path: 
+      - ".github/workflows/*"
+  workflow_dispatch: #manual
+
+jobs:
+  cli:
+    name: command-lines
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh --version
+      - run: gh auth status
