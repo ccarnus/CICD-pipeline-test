@@ -1,9 +1,10 @@
 name: sleep
 
 on: 
-  push:
+#  push:
 #  schedule:
 #    - cron: 0/5 * * * *
+  workflow_dispatch: #manual trigger
 
 jobs:
   build:
