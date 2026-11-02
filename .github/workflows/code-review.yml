@@ -10,7 +10,8 @@ jobs:
   cli:
     name: command-lines
     runs-on: ubuntu-latest
-    env: GH_TOKEN = ${{ secrets.GITHUB_TOKEN }}
+    env: 
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - run: gh --version
