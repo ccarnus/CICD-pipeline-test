@@ -1,0 +1,17 @@
+name: Show-Directory
+
+on:
+  workflow_dispatch: #manual trigger only
+
+jobs:
+  prep:
+    name: preparing the working directory
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: DISPLAY BEFORE
+        run: pwd && ll
+      - name: RUN THE CHECKOUT
+        uses: actions/checkout@v4
+      - name: DISPLAY AFTER
+        run: pwd && ll
